@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Car Price Prediction</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+<body>
+    <div class="content-container">
+    <h1>Car Price Prediction</h1>
+    <form id="carForm" action="/predict" method="POST">
+        <label for="vehicletype">VehicleType</label>
+        <select type="text" id="vehicletype" name="vehicletype" required>
+            <option value="limousine">Limousine</option>
+            <option value="small car">Small Car</option>
+            <option value="bus">Bus</option>
+            <option value="cabrio">Cabrio</option>
+            <option value="coupe">Coupe</option>
+            <option value="suv">Suv</option>
+            <option value"others">Others</option>
+        </select><br><br>
+        <label for="gearbox">Select Gearbox:</label>
+        <select id="gearbox" name="gearbox">
+            <option value="automatic">Automatic</option>
+            <option value="manual">Manual</option>
+        </select><br><br>
+        <label for="model">Car model</label>
+        <input type="text" id="model" name="model" required><br><br>
+        <label for="fueltype">Select fuelType</label>
+        <select id="fueltype" name="fueltype">
+            <option value="Petrol">Petrol</option>
+            <option value="Diesel">Diesel</option>
+            <option value="Electric">Electric</option>
+            <option value="Hybrid">Hybrid</option>
+            <option value="CNG">CNG</option>
+            <option value="LPG">LPG</option>
+        </select><br><br>
+        <label for="kilometer">Kilometer run</label>
+        <input type="number" id="kilometer" name="kilometer" required><br><br>
+        <label for="notRequiredDamage">notRepairedDamage</label>
+        <select id="notRequiredDamage" name="notRequiredDamage">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br><br>
+        <label for="brand">Brand</label>
+        <input type="text" id="brand" name="brand" required><br><br>
+        <label for="age">Age (in years):</label>
+        <input type="number" id="age" name="age" required><br><br>
+        <label for="powerPS">Power (in PS):</label>
+        <input type="number" id="powerPS" name="powerPS" required><br><br>
+        <button type="submit">Predict Price</button><br><br>
+    </form>
+    <p>Predicted Price: ${{ predicted_price if predicted_price is defined else '-' }}</p>
+</div>
+<div class="background-container"></div>
+</body>
+</html>
