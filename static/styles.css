@@ -1,0 +1,118 @@
+.background-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: backgroundAnimation 112s infinite;
+}
+
+@keyframes backgroundAnimation {
+  0% { background-image: url('background(1).jpg'); }
+  5% { background-image: url('background(2).jpg'); }
+  10% { background-image: url('background(3).jpg'); }
+  15% { background-image: url('background(4).jpg'); }
+  20% { background-image: url('background(5).jpg'); }
+  25% { background-image: url('background(6).jpg'); }
+  30% { background-image: url('background(7).jpg'); }
+  35% { background-image: url('background(8).jpg'); }
+  40% { background-image: url('background(9).jpg'); }
+  45% { background-image: url('background(10).jpg'); }
+  50% { background-image: url('background(11).jpg'); }
+  55% { background-image: url('background(12).jpg'); }
+  60% { background-image: url('background(13).jpg'); }
+  65% { background-image: url('background(14).jpg'); }
+  70% { background-image: url('background(15).jpg'); }
+  75% { background-image: url('background(16).jpg'); }
+  80% { background-image: url('background(17).jpg'); }
+  85% { background-image: url('background(18).jpg'); }
+  90% { background-image: url('background(19).jpg'); }
+  95% { background-image: url('background(20).jpg'); }
+  100% { background-image: url('background(1).jpg'); }
+}
+
+
+body {
+  font-family: 'Arial',cursive;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-left: 100px;
+}
+.content-container {
+   
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  margin-top: 5px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 20px;
+  font-family: 'Jokewood', cursive;
+}
+
+label {
+  font-weight: bold;
+  font-size: 16px; 
+  display: block;
+  margin-bottom: 7px;
+  color: white;
+  font-family: 'Comic Sans MS', cursive;
+}
+input {
+  width: 18.8%;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #555;
+  border-radius: 4px;
+  color: black;
+  background-color: white;
+  cursor: pointer;
+}
+
+select {
+  width: 20%;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #555;
+  border-radius: 4px;
+  color: black;
+  background-color: white;
+  cursor: pointer;
+}
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Comic Sans MS',cursive;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:active {
+  background-color: #003c80;
+}
+p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  color: white;
+  
+  font-family: 'Jokewood', cursive;
+  font-size: bold;
+
+}
+
